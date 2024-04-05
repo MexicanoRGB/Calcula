@@ -1,0 +1,20 @@
+programa {
+  funcao inicio() {
+   inteiro a = 0
+   inteiro b = 0
+
+   escreva("Sistema de somas\n")
+   escreva("Digite um numero: ")
+   leia(a)
+   escreva("Digite outro numero: ")
+   leia(b)
+    inteiro c = a+b
+    inteiro d = a-b
+    inteiro v = a*b
+    inteiro g = a/b
+    escreva("o resultado da soma é "+c )
+    escreva("\no resultado da diminuição é "+d)
+    escreva("\no resultado da multiplicaçao é "+v)
+    escreva("\no resultado da divisão é "+g)
+  }
+}
