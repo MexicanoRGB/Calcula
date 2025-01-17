@@ -1,20 +1,38 @@
 programa {
+
+  inclua biblioteca Matematica --> mat
+
   funcao inicio() {
-   inteiro a = 0
-   inteiro b = 0
+
+   real numero1 = 0
+   real numero2 = 0
 
    escreva("Sistema de somas\n")
    escreva("Digite um numero: ")
-   leia(a)
+   leia(numero1)
    escreva("Digite outro numero: ")
-   leia(b)
-    inteiro c = a+b
-    inteiro d = a-b
-    inteiro v = a*b
-    inteiro g = a/b
-    escreva("o resultado da soma é "+c )
-    escreva("\no resultado da diminuição é "+d)
-    escreva("\no resultado da multiplicaçao é "+v)
-    escreva("\no resultado da divisão é "+g)
+   leia(numero2)
+    real soma = numero1+numero2
+    real subtracao = numero1-numero2
+    real multiplicacao = numero1*numero2
+    real divisao = mat.arredondar(numero1/numero2,2)
+
+    caracter opcao
+    escreva("\nVocê quer o resultado da soma? S ou N ")
+    leia(opcao)
+    se (opcao == "S"){escreva("\no resultado da soma é "+soma )}
+    
+    escreva("\nVocê quer o resultado da diminuição? S ou N ")
+    leia(opcao)
+    se (opcao == "S"){escreva("\no resultado da diminuição é "+subtracao)}
+    
+    escreva("\nVocê quer o resultado da multiplicaçao? S ou N ")
+    leia(opcao)
+    se (opcao == "S"){escreva("\no resultado da multiplicaçao é "+multiplicacao)}
+
+    escreva("\nVocê quer o resultado da divisão? S ou N ")
+    leia(opcao)
+    se (opcao == "S"){escreva("\no resultado da divisão é "+divisao)}
+    
   }
 }
